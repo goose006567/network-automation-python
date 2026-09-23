@@ -1,0 +1,33 @@
+devices:
+  - name: core-router-01
+    host: 192.168.1.1
+    port: 22
+    device_type: cisco_ios
+    username: admin
+    password: secret
+    secret: secret          # enable password for cisco
+  - name: switch-access-01
+    host: 192.168.1.2
+    device_type: cisco_ios
+    username: admin
+    password: secret
+    secret: secret
+
+backup_dir: ./backups
+filename_format: "{name}_{date}.txt"
+netbox:
+  url: http://127.0.0.1:8001
+  token: 0123456789abcdef
+certs:
+  - name: mock-ssl-ok
+    host: 127.0.0.1
+    port: 8443
+    cafile: certs/ok.crt
+  - name: mock-ssl-warn
+    host: 127.0.0.1
+    port: 8444
+    cafile: certs/warn.crt
+  - name: mock-ssl-crit
+    host: 127.0.0.1
+    port: 8445
+    cafile: certs/crit.crt

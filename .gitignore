@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+backups/
+cert_alerts.log
+certs/
+*.log
+.DS_Store
