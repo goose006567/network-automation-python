@@ -19,7 +19,7 @@ Four scripts that automate day-to-day network chores, all tested end-to-end agai
 ├── drift_detection.py    # step 2: drift detection (baseline vs current)
 ├── netbox_ipam.py        # step 3: NetBox REST API (IPAM)
 ├── cert_expiry.py        # step 4: SSL certificate expiry monitoring
-├── config.yaml           # devices + netbox + certs config (real-world targets)
+├── config.yaml           # devices + netbox + certs config (example targets)
 ├── config.local.yaml     # test config pointing at the mock servers
 ├── requirements.txt
 ├── mock_device.py        # fake router: SSH server that answers "show running-config"
